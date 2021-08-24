@@ -47,7 +47,7 @@ public class BarangAdapter extends RecyclerView.Adapter<BarangAdapter.ViewHolder
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()){
                             case R.id.ubah:
-                                Toast.makeText(context, "Ubah", Toast.LENGTH_SHORT).show();
+                                ((MainActivity)context).selectUpdate(barang.getIdbarang());
                             break;
                             case R.id.hapus:
                                 ((MainActivity)context).Delete(barang.getIdbarang());
